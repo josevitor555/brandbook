@@ -34,7 +34,7 @@ export default function CardShowcase() {
             </p>
           </CardContent>
           <CardFooter>
-            <Button variant="outline" size="sm" className="w-full">View Details</Button>
+            <Button variant="outline" size="sm" className="w-full h-12">View Details</Button>
           </CardFooter>
         </Card>
 
@@ -64,26 +64,26 @@ export default function CardShowcase() {
         {/* Card with Image (Placeholder Simulation) */}
         <Card>
           <div className="h-40 bg-muted flex items-center justify-center relative">
-             <div className="absolute top-2 right-2 flex gap-1">
-                <Badge variant="secondary">New</Badge>
-             </div>
-             <span className="text-muted-foreground/50 font-bold italic">POST COVER</span>
+            <div className="absolute top-2 right-2 flex gap-1">
+              <Badge variant="secondary">New</Badge>
+            </div>
+            <span className="text-muted-foreground/50 font-bold italic">POST COVER</span>
           </div>
           <CardHeader>
             <CardTitle>Instagram Post #02</CardTitle>
             <CardDescription>Updated 2 hours ago</CardDescription>
           </CardHeader>
           <CardContent>
-             <p className="text-sm">
-                Focus on the dark theme implementation with gold accents.
-             </p>
+            <p className="text-sm">
+              Focus on the dark theme implementation with gold accents.
+            </p>
           </CardContent>
           <CardFooter className="flex justify-between">
             <Button variant="ghost" size="sm">
-               <Heart className="h-4 w-4 mr-2" /> 24
+              <Heart className="h-4 w-4 mr-2" /> 24
             </Button>
             <Button variant="ghost" size="sm">
-               <Share2 className="h-4 w-4 mr-2" /> Share
+              <Share2 className="h-4 w-4 mr-2" /> Share
             </Button>
           </CardFooter>
         </Card>
@@ -113,7 +113,7 @@ export default function CardShowcase() {
             Cards are built using semantic sub-components. Use <code>CardAction</code> for elements that should sit in the header corner.
           </p>
           <pre className="p-4 bg-muted rounded-md text-[13px] overflow-auto">
-{`import {
+            {`import {
   Card,
   CardHeader,
   CardFooter,

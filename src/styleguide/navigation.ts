@@ -13,7 +13,13 @@ export const navigation: NavSection[] = [
     title: "Foundation",
     items: [
       { name: "Design Tokens", href: "/styleguide" },
-      { name: "Pricing Page", href: "/styleguide/pages/pricing" },
+    ]
+  },
+  {
+    title: "Pages",
+    items: [
+      { name: "Post Preview", href: "/post-preview" },
+      // { name: "Pricing Page", href: "/styleguide/pages/pricing" },
     ]
   },
   {

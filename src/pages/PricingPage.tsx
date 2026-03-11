@@ -58,7 +58,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-background py-20 px-4 flex items-center justify-center">
       <div className="max-w-6xl w-full">
         {/* Animated Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -83,7 +83,7 @@ export default function PricingPage() {
               whileHover={{ scale: 1.02 }}
               className="relative h-full"
             >
-              <Card 
+              <Card
                 className={cn(
                   "relative h-full flex flex-col transition-all duration-300",
                   "border-[0.5px] border-border shadow-none overflow-visible",
@@ -131,7 +131,7 @@ export default function PricingPage() {
                 </CardContent>
 
                 <CardFooter className="pt-8">
-                  <Button 
+                  <Button
                     className={cn(
                       "w-full h-12 flex items-center justify-center gap-3 overflow-hidden group transition-all duration-500",
                       tier.popular ? "bg-black text-white hover:bg-zinc-800 dark:bg-zinc-50 dark:text-black dark:hover:bg-white" : "variant-outline border-[0.5px] bg-transparent hover:bg-muted text-foreground"
@@ -148,7 +148,7 @@ export default function PricingPage() {
         </div>
 
         {/* Footer Note */}
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}

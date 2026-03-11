@@ -5,16 +5,19 @@ import ChartShowcase from "./styleguide/components/chart/page"
 import ButtonShowcase from "./styleguide/components/button/page"
 import AlertDialogShowcase from "./styleguide/components/alert-dialog/page"
 import CardShowcase from "./styleguide/components/card/page"
-import PricingPage from "./pages/PricingPage"
+import PostPreviewPage from "./pages/PostPreviewPage"
 
+// Import CSS
 import "./App.css"
 
 const ComponentLoader = () => {
   const { name } = useParams<{ name: string }>()
 
   switch (name) {
-    case "pricing":
-      return <PricingPage />
+    case "post-preview":
+      return <PostPreviewPage />
+    // case "pricing":
+    //   return <PricingPage />
     case "alert-dialog":
       return <AlertDialogShowcase />
     case "button":
@@ -38,6 +41,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/styleguide" replace />} />
+
+        {/* Solo Page Route */}
+        <Route path="/post-preview" element={<PostPreviewPage />} />
 
         <Route path="/styleguide" element={<StyleguideLayout />}>
           <Route index element={<StyleguidePage />} />
