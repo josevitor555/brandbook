@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* === BASE === */
+  --background: #FAFAFA;
+  --foreground: #181818;
+
+  /* === CARD === */
+  --card: #FFFFFF;
+  --card-foreground: #181818;
+
+  /* === POPOVER / DROPDOWN / TOOLTIP === */
+  --popover: #FFFFFF;
+  --popover-foreground: #181818;
+
+  /* === PRIMARY (Lime Accent) === */
+  --primary: #DEEA2E;
+  --primary-foreground: #181818;
+
+  /* === SECONDARY (Subtle Lime) === */
+  --secondary: #DAE53A;
+  --secondary-foreground: #181818;
+
+  /* === MUTED === */
+  --muted: #F1F1F1;
+  --muted-foreground: #666666;
+
+  /* === ACCENT === */
+  --accent: #F1F1F1;
+  --accent-foreground: #181818;
+
+  /* === DESTRUCTIVE === */
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  /* === BORDERS & INPUTS === */
+  --border: #e2e8f0;
+  --input: #cbd5e1;
+  --ring: #DEEA2E;
+
+  /* === BORDER RADIUS === */
+  --radius: 0.5rem;
+
+  /* === CHART COLORS === */
+  --chart-1: #DEEA2E;
+  --chart-2: #DAE53A;
+  --chart-3: #181818;
+  --chart-4: #000000;
+  --chart-5: #666666;
+
+  /* === SIDEBAR === */
+  --sidebar: #FAFAFA;
+  --sidebar-foreground: #181818;
+  --sidebar-primary: #DEEA2E;
+  --sidebar-primary-foreground: #181818;
+  --sidebar-accent: #F1F1F1;
+  --sidebar-accent-foreground: #181818;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #DEEA2E;
+
+  /* === CUSTOM SEMANTIC COLORS === */
+  --success: #10B981;
+  --success-foreground: #ffffff;
+  --warning: #F59E0B;
+  --warning-foreground: #1a1a1a;
+  --info: #3B82F6;
+  --info-foreground: #ffffff;
+}
+
+.dark {
+  /* === BASE === */
+  --background: #181818;
+  --foreground: #FFFFFF;
+
+  /* === CARD === */
+  --card: #000000;
+  --card-foreground: #FFFFFF;
+
+  /* === POPOVER / DROPDOWN / TOOLTIP === */
+  --popover: #000000;
+  --popover-foreground: #FFFFFF;
+
+  /* === PRIMARY (Warm Orange/Gold) === */
+  --primary: #EAB560;
+  --primary-foreground: #181818;
+
+  /* === SECONDARY (Ivory/Cream) === */
+  --secondary: #EBE5C2;
+  --secondary-foreground: #181818;
+
+  /* === MUTED === */
+  --muted: #262626;
+  --muted-foreground: #A1A1AA;
+
+  /* === ACCENT === */
+  --accent: #262626;
+  --accent-foreground: #FFFFFF;
+
+  /* === DESTRUCTIVE === */
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  /* === BORDERS & INPUTS === */
+  --border: #333333;
+  --input: #3F3F46;
+  --ring: #EAB560;
+
+  /* === SIDEBAR === */
+  --sidebar: #181818;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #EAB560;
+  --sidebar-primary-foreground: #181818;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #333333;
+  --sidebar-ring: #EAB560;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+
+  /* Scales are now derived from the key brand colors */
+  --color-neutral-ground: #181818;
+  --color-neutral-pure: #000000;
+  
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter Variable', sans-serif;
+  }
+}
